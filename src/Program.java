@@ -2,10 +2,6 @@ public class Program
 {
     public static void main(String[] args)
     {
-        // Declaring two instances of Pet, fido and fred, using each of the Pet constructors
-        Pet fido = new Pet("Fido", 7);
-        Pet fred = new Pet("Fred");
-
         // Declaring an instance of Dog, wilf
         Dog wilf = new Dog("Wilf", 5, "Collie");
 
@@ -17,5 +13,11 @@ public class Program
 
         // Calling bert's meows method
         bert.meows();
+
+        // Calling the makesSound method for wilf and bert
+        wilf.makesSound();
+        bert.makesSound();
+
+        BorderCollie jane = new BorderCollie("Jane", 8, "Border Collie");
     }
 }

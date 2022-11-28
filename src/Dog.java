@@ -26,4 +26,17 @@ public class Dog extends Pet
         System.out.println(this.getName() + " digs a hole!");
     }
 
+    @Override
+    public void makesSound()
+    {
+        System.out.println("Woof!");
+    }
+
+    @Override
+    public void eats()
+    {
+        System.out.println("Nom nom nom!");
+    }
+
+
 }

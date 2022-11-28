@@ -23,12 +23,24 @@ public class Cat extends Pet
     // Declaring method meows to output a message when called
     public void meows()
     {
-        System.out.print(this.getName() + " meows!");
+        System.out.println(this.getName() + " meows!");
     }
 
     // Declaring method sleeps to output a message when called
     public void sleeps()
     {
-        System.out.print("zzzzzzz!");
+        System.out.println("zzzzzzz!");
+    }
+
+    @Override
+    public void makesSound()
+    {
+        System.out.println("Meow!");
+    }
+
+    @Override
+    public void eats()
+    {
+        System.out.println("Slurp slurp slurp!");
     }
 }

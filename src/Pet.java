@@ -1,5 +1,5 @@
 // Pet class
-public class Pet
+public abstract class Pet
 {
     // Declaring variables name and age
     private String name;
@@ -48,4 +48,12 @@ public class Pet
         this.age = age + 1;
         return age;
     }
+
+    // Declaring method makesSound to output a message when called
+    public void makesSound()
+    {
+        System.out.println("Hmmph!");
+    }
+
+    abstract public void eats();
 }
